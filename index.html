@@ -8,52 +8,59 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Food, LLC</a>
-                </div>
-                
-                <div id="collapsable-nav" class="collapse navbar-collapse">
-                    <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
-                        <li><a href="#chicken">Chicken</a></li>
-                        <li><a href="#beef">Beef</a></li>
-                        <li><a href="#sushi">Sushi</a></li>
-                    </ul>
-                </div>
+    <div id="top"></div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Food, LLC</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-        </nav>
-    </header>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#chicken">Chicken</a></li>
+                    <li><a href="#beef">Beef</a></li>
+                    <li><a href="#sushi">Sushi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <div id="main-content" class="container">
-        <h2 id="page-heading" class="text-center">Our Menu</h2>
-        <section class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="menu-item-tile">
-                    <h3 class="text-center">Chicken</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultrices erat. 
-                        Praesent et diam a libero aliquam venenatis. Donec lacinia nunc in dolor semper, 
-                        in dignissim nisi feugiat. Cras posuere nibh sed enim consectetur, vel placerat 
-                        lorem feugiat. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-                        Praesent bibendum est eu justo egestas, at commodo elit iaculis. Donec augue dui, 
-                        bibendum et dapibus in, placerat ac enim. Aliquam in nisl quis est aliquet euismod 
-                        a nec est. Maecenas ac condimentum mi.
-                    </p>
+    <div class="container">
+        <h1 class="text-center">Our Menu</h1>
+    </div>
+
+    <div class="container">
+        <section id="menu-items">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center" id="chicken">
+                    <h2>Chicken</h2>
+                    <p>Heerlijke gegrilde kip met een selectie van sauzen. Onze kip wordt zorgvuldig geselecteerd en bereid met de beste kruiden en specerijen. Geserveerd met een frisse salade en naar keuze aardappelen of rijst.</p>
+                    <p><a href="#top">Back to Top</a></p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center" id="beef">
+                    <h2>Beef</h2>
+                    <p>Succulent rundvlees, perfect gebakken naar jouw smaak. Ons rundvlees is afkomstig van lokale boerderijen en wordt gerijpt voor optimale smaak. Kies uit verschillende bereidingswijzen en bijpassende sauzen.</p>
+                    <p><a href="#top">Back to Top</a></p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center" id="sushi">
+                    <h2>Sushi</h2>
+                    <p>Verse sushi met een assortiment van toppings en smaken. Onze sushi-chef bereidt dagelijks een verscheidenheid aan rollen en nigiri met de versте vis en zeevruchten. Geniet van traditionele en moderne sushi-creaties.</p>
+                    <p><a href="#top">Back to Top</a></p>
                 </div>
             </div>
         </section>
     </div>
 
-    <script src="js/jquery-2.1.4.min.js"></script>
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 Food, LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
 </body>
 </html>
