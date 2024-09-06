@@ -1,24 +1,69 @@
-
 body {
-    background-color: #f0f0f0; /* Lichte achtergrondkleur voor de hele pagina */
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
 }
 
 .navbar {
-    margin-bottom: 20px; /* Ruimte onder de navbar */
+    background-color: #f8f8f8;
+    border-radius: 0;
+    border: none;
 }
 
-.container {
-    margin-top: 20px; /* Ruimte boven de container */
+.navbar-brand {
+    font-size: 1.8em;
+    color: #61122f;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
 }
 
-h1, h2 {
-    color: #333; /* Donkere kleur voor de koppen */
+#nav-list {
+    margin-top: 10px;
 }
 
-#menu-items {
-    background-color: #ffffff; /* Witte achtergrond voor de menu-items sectie */
-    padding: 20px; /* Ruimte binnen de sectie */
-    border-radius: 5px; /* Ronde hoeken voor de sectie */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+#nav-list a {
+    color: #951C49;
+    text-align: center;
 }
 
+#nav-list a:hover {
+    background: #E7E7E7;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #61122f;
+}
+
+#page-heading {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.menu-item-tile {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+.menu-item-tile h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 767px) {
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+    .navbar-brand h1 {
+        padding-top: 10px;
+        font-size: 5vw;
+    }
+    .menu-item-tile {
+        width: 360px;
+        margin: 0 auto 15px;
+    }
+}
