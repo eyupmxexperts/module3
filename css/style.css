@@ -1,3 +1,4 @@
+
 body {
     background-color: #f0f0f0; /* Lichte achtergrondkleur voor de hele pagina */
 }
@@ -20,3 +21,4 @@ h1, h2 {
     border-radius: 5px; /* Ronde hoeken voor de sectie */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
 }
+
