@@ -1,0 +1,22 @@
+body {
+    background-color: #f0f0f0; /* Lichte achtergrondkleur voor de hele pagina */
+}
+
+.navbar {
+    margin-bottom: 20px; /* Ruimte onder de navbar */
+}
+
+.container {
+    margin-top: 20px; /* Ruimte boven de container */
+}
+
+h1, h2 {
+    color: #333; /* Donkere kleur voor de koppen */
+}
+
+#menu-items {
+    background-color: #ffffff; /* Witte achtergrond voor de menu-items sectie */
+    padding: 20px; /* Ruimte binnen de sectie */
+    border-radius: 5px; /* Ronde hoeken voor de sectie */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+}
