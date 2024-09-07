@@ -1,48 +1,93 @@
+/* Algemene stijlen */
 body {
-    background-color: #f0f0f0;
-}
-
-.navbar {
-    margin-bottom: 20px;
-}
-
-.container {
-    margin-top: 20px;
+    background-color: #f0f0f0; /* Lichte achtergrondkleur voor de hele pagina */
+    font-family: Arial, sans-serif; /* Standaard lettertype */
 }
 
 h1, h2 {
-    color: #333;
+    color: #333; /* Donkere kleur voor koppen */
+    margin-bottom: 20px; /* Ruimte onder de koppen */
 }
 
+/* Navbar */
+.navbar {
+    margin-bottom: 20px; /* Ruimte onder de navbar */
+}
+
+.navbar-brand {
+    font-size: 24px; /* Grotere tekst voor het merk/logo */
+    font-weight: bold;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #333; /* Kleur van de hamburger-icoon (menu) */
+}
+
+/* Mobiele navigatie */
+.navbar-collapse {
+    background-color: #333; /* Donkere achtergrond voor het dropdown-menu */
+}
+
+.navbar-nav > li > a {
+    color: #fff; /* Witte tekstkleur voor menu-items */
+    padding: 10px 20px;
+}
+
+.navbar-nav > li > a:hover {
+    background-color: #555; /* Hover-effect op menu-items */
+}
+
+/* Sectie voor menu-items */
 #menu-items {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Witte achtergrond voor de menu-items sectie */
+    padding: 40px 20px; /* Ruimte binnen de sectie */
+    border-radius: 5px; /* Ronde hoeken voor de sectie */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+}
+
+/* Menu-item secties */
+#menu-items .text-center {
+    margin-bottom: 40px; /* Ruimte tussen secties */
+}
+
+#menu-items h2 {
+    font-size: 24px; /* Grotere tekst voor de titels */
+}
+
+#menu-items p {
+    font-size: 16px; /* Grotere tekst voor paragrafen */
+    color: #666; /* Donkere kleur voor de beschrijvingen */
+}
+
+/* Stijlen voor de back-to-top links */
+#menu-items a {
+    color: #007bff; /* Blauwe kleur voor de links */
+    text-decoration: none;
+}
+
+#menu-items a:hover {
+    text-decoration: underline; /* Onderstreping bij hover */
+}
+
+/* Extra spacing */
+.container {
+    margin-top: 20px; /* Ruimte boven de container */
 }
 
 @media (max-width: 767px) {
-    .navbar-brand {
-        font-size: 1.5em;
-        padding: 10px 15px;
+    .navbar-collapse {
+        padding-left: 0;
+        padding-right: 0;
     }
-    
-    #menu-items .col-xs-12 {
-        margin-bottom: 20px;
-    }
-    
-    h1 {
-        font-size: 2em;
-    }
-    
-    h2 {
-        font-size: 1.5em;
-    }
-}
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    margin-top: 30px;
+    /* Zorg ervoor dat de links over de volle breedte van het scherm gaan op mobiel */
+    .navbar-nav > li > a {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Verklein marges en paddings op kleinere schermen */
+    #menu-items {
+        padding: 20px 10px;
+    }
 }
