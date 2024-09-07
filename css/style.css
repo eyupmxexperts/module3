@@ -1,14 +1,7 @@
-/* General styles */
 body {
     font-family: Arial, sans-serif;
 }
 
-h1, h2 {
-    color: #333;
-    margin-bottom: 20px;
-}
-
-/* Navbar */
 .navbar {
     border-radius: 0;
     margin-bottom: 0;
@@ -18,6 +11,7 @@ h1, h2 {
     font-size: 2em;
     font-weight: bold;
     color: #333 !important;
+    padding-left: 15px;
 }
 
 .navbar-default .navbar-toggle {
@@ -28,49 +22,32 @@ h1, h2 {
     background-color: #333;
 }
 
-/* Mobile navigation */
 #nav-list {
     margin-top: 10px;
-    width: 100%;
-    position: absolute;
-    top: 50px; /* Adjust based on the navbar height */
-    left: 0;
-    background-color: #f8f8f8;
-    z-index: 1000;
-    display: none; /* Initially hidden */
 }
 
 #nav-list a {
     color: #333;
     text-align: center;
-    display: block;
-    padding: 10px 0;
-    border-bottom: 1px solid #e7e7e7;
-    transition: background-color 0.3s ease;
+    font-size: 1.2em;
 }
 
 #nav-list a:hover {
     background: #E7E7E7;
 }
 
-/* Show the dropdown when the navbar is expanded */
-.navbar-collapse.collapse.in #nav-list {
-    display: block;
-}
-
-/* Main content section */
 #main-content {
     background-color: #A52A2A;
     padding: 20px;
     color: white;
-    min-height: 1000px; /* Makes the section really tall */
+    margin-top: 20px;
+    min-height: 1000px;
 }
 
 #main-content h2 {
     color: white;
 }
 
-/* Responsive adjustments */
 @media (max-width: 767px) {
     .navbar-brand {
         font-size: 1.5em;
@@ -82,17 +59,10 @@ h1, h2 {
     }
 
     #nav-list {
-        width: 100%;
+        margin-bottom: 0;
     }
 
     #nav-list a {
         border-bottom: 1px solid #e7e7e7;
-    }
-}
-
-/* Desktop-specific layout improvements */
-@media (min-width: 768px) {
-    .navbar-brand {
-        padding-left: 15px;
     }
 }
