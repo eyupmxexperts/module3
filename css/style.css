@@ -41,13 +41,14 @@ body {
     padding: 20px;
     color: white;
     margin-top: 20px;
-    min-height: 1000px;
+    min-height: 1000px; /* Ensures scroll for smaller screens */
 }
 
 #main-content h2 {
     color: white;
 }
 
+/* Adjustments for mobile view */
 @media (max-width: 767px) {
     .navbar-brand {
         font-size: 1.5em;
@@ -66,3 +67,5 @@ body {
         border-bottom: 1px solid #e7e7e7;
     }
 }
+
+
