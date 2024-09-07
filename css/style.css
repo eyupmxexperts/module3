@@ -29,8 +29,8 @@ body {
 #nav-list a {
     color: #333;
     font-size: 1.2em;
-    display: block; /* Ensures full width clickable area */
-    padding: 10px 0; /* Adds spacing around menu items */
+    display: block;
+    padding: 10px 0;
 }
 
 #nav-list a:hover {
@@ -42,11 +42,23 @@ body {
     padding: 20px;
     color: white;
     margin-top: 20px;
-    min-height: 1000px; /* Ensures scroll for smaller screens */
+    min-height: 1000px;
 }
 
 #main-content h2 {
     color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.tall-section {
+    min-height: 1000px;
+}
+
+#collapsable-nav {
+    transition: all 0.3s ease-in-out;
 }
 
 /* Adjustments for mobile view */
@@ -56,7 +68,7 @@ body {
     }
 
     #collapsable-nav {
-        background-color: #f8f8f8;
+        background-color: #e0e0e0;
         border-top: 1px solid #e7e7e7;
     }
 
@@ -66,10 +78,16 @@ body {
 
     #nav-list a {
         border-bottom: 1px solid #e7e7e7;
-        text-align: center; /* Ensures text is centered in the mobile view */
+        text-align: center;
     }
 
     #nav-list a:last-child {
-        border-bottom: none; /* Removes the bottom border from the last item */
+        border-bottom: none;
+    }
+
+    .full-width {
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 }
