@@ -1,107 +1,78 @@
-/* Algemene stijlen */
+/* General styles */
 body {
-    background-color: #f0f0f0; /* Lichte achtergrondkleur voor de hele pagina */
-    font-family: Arial, sans-serif; /* Standaard lettertype */
+    font-family: Arial, sans-serif;
 }
 
 h1, h2 {
-    color: #333; /* Donkere kleur voor koppen */
-    margin-bottom: 20px; /* Ruimte onder de koppen */
+    color: #333;
+    margin-bottom: 20px;
 }
 
 /* Navbar */
 .navbar {
-    margin-bottom: 20px; /* Ruimte onder de navbar */
-    border-radius: 0; /* Verwijder standaard bootstrap border-radius */
+    border-radius: 0;
+    margin-bottom: 0;
 }
 
 .navbar-brand {
-    font-size: 24px; /* Grotere tekst voor het merk/logo */
+    font-size: 2em;
     font-weight: bold;
+    color: #333 !important;
 }
 
-.navbar-toggle .icon-bar {
-    background-color: #333; /* Kleur van de hamburger-icoon (menu) */
+.navbar-default .navbar-toggle {
+    border-color: #333;
 }
 
-/* Mobiele navigatie */
-.navbar-collapse {
-    background-color: #333; /* Donkere achtergrond voor het dropdown-menu */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #333;
 }
 
-.navbar-nav > li > a {
-    color: #fff; /* Witte tekstkleur voor menu-items */
-    padding: 10px 20px;
+/* Mobile navigation */
+#nav-list {
+    margin-top: 10px;
 }
 
-.navbar-nav > li > a:hover {
-    background-color: #555; /* Hover-effect op menu-items */
-}
-
-/* Sectie voor menu-items */
-#menu-items {
-    background-color: #ffffff; /* Witte achtergrond voor de menu-items sectie */
-    padding: 40px 20px; /* Ruimte binnen de sectie */
-    border-radius: 5px; /* Ronde hoeken voor de sectie */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
-}
-
-/* Menu-item secties */
-#menu-items .text-center {
-    margin-bottom: 40px; /* Ruimte tussen secties */
-}
-
-#menu-items h2 {
-    font-size: 24px; /* Grotere tekst voor de titels */
+#nav-list a {
     color: #333;
+    text-align: center;
 }
 
-#menu-items p {
-    font-size: 16px; /* Grotere tekst voor paragrafen */
-    color: #666; /* Donkere kleur voor de beschrijvingen */
+#nav-list a:hover {
+    background: #E7E7E7;
 }
 
-/* Stijlen voor de back-to-top links */
-#menu-items a {
-    color: #007bff; /* Blauwe kleur voor de links */
-    text-decoration: none;
+/* Main content section */
+#main-content {
+    background-color: #A52A2A;
+    padding: 20px;
+    color: white;
+    min-height: 1000px; /* Makes the section really tall */
 }
 
-#menu-items a:hover {
-    text-decoration: underline; /* Onderstreping bij hover */
+#main-content h2 {
+    color: white;
 }
 
-/* Extra spacing */
-.container {
-    margin-top: 20px; /* Ruimte boven de container */
-}
-
-/* Responsieve aanpassingen voor mobiele apparaten */
+/* Responsive adjustments */
 @media (max-width: 767px) {
-    .navbar-collapse {
-        padding-left: 0;
-        padding-right: 0;
+    .navbar-brand {
+        font-size: 1.5em;
     }
 
-    /* Zorg ervoor dat de links over de volle breedte van het scherm gaan op mobiel */
-    .navbar-nav > li > a {
-        text-align: center;
-        width: 100%;
+    #collapsable-nav {
+        background-color: #f8f8f8;
+        border-top: 1px solid #e7e7e7;
     }
 
-    /* Verklein marges en paddings op kleinere schermen */
-    #menu-items {
-        padding: 20px 10px;
+    #nav-list a {
+        border-bottom: 1px solid #e7e7e7;
     }
 }
 
 /* Desktop-specific layout improvements */
 @media (min-width: 768px) {
-    .navbar-nav {
-        float: right; /* Positioneer de navigatie aan de rechterkant op desktop */
-    }
-
     .navbar-brand {
-        float: left; /* Houd de branding links op desktop */
+        padding-left: 15px;
     }
 }
