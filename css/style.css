@@ -12,6 +12,7 @@ h1, h2 {
 /* Navbar */
 .navbar {
     margin-bottom: 20px; /* Ruimte onder de navbar */
+    border-radius: 0; /* Verwijder standaard bootstrap border-radius */
 }
 
 .navbar-brand {
@@ -52,6 +53,7 @@ h1, h2 {
 
 #menu-items h2 {
     font-size: 24px; /* Grotere tekst voor de titels */
+    color: #333;
 }
 
 #menu-items p {
@@ -74,6 +76,7 @@ h1, h2 {
     margin-top: 20px; /* Ruimte boven de container */
 }
 
+/* Responsieve aanpassingen voor mobiele apparaten */
 @media (max-width: 767px) {
     .navbar-collapse {
         padding-left: 0;
@@ -89,5 +92,16 @@ h1, h2 {
     /* Verklein marges en paddings op kleinere schermen */
     #menu-items {
         padding: 20px 10px;
+    }
+}
+
+/* Desktop-specific layout improvements */
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: right; /* Positioneer de navigatie aan de rechterkant op desktop */
+    }
+
+    .navbar-brand {
+        float: left; /* Houd de branding links op desktop */
     }
 }
