@@ -31,15 +31,31 @@ h1, h2 {
 /* Mobile navigation */
 #nav-list {
     margin-top: 10px;
+    width: 100%;
+    position: absolute;
+    top: 50px; /* Adjust based on the navbar height */
+    left: 0;
+    background-color: #f8f8f8;
+    z-index: 1000;
+    display: none; /* Initially hidden */
 }
 
 #nav-list a {
     color: #333;
     text-align: center;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #e7e7e7;
+    transition: background-color 0.3s ease;
 }
 
 #nav-list a:hover {
     background: #E7E7E7;
+}
+
+/* Show the dropdown when the navbar is expanded */
+.navbar-collapse.collapse.in #nav-list {
+    display: block;
 }
 
 /* Main content section */
@@ -63,6 +79,10 @@ h1, h2 {
     #collapsable-nav {
         background-color: #f8f8f8;
         border-top: 1px solid #e7e7e7;
+    }
+
+    #nav-list {
+        width: 100%;
     }
 
     #nav-list a {

@@ -2,72 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food, LLC</title>
-    <!-- Bootstrap 3.4.1 CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food, LLC - Our Menu</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Food, LLC</a>
-            </div>
-            
-            <div id="collapsable-nav" class="collapse navbar-collapse">
-                <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
-                    <li><a href="#chicken">Chicken</a></li>
-                    <li><a href="#beef">Beef</a></li>
-                    <li><a href="#sushi">Sushi</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Page Header -->
-    <div class="container">
-        <h1 class="text-center">Our Menu</h1>
-    </div>
-
-    <!-- Main Content Section -->
+<!-- Navbar -->
+<nav class="navbar navbar-default">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12" id="main-content">
-                <h2 class="text-center">Our Specialties</h2>
-                <p>
-                    Welcome to Food, LLC, where culinary excellence meets passion. Our menu is carefully crafted to bring you the best flavors from around the world. Whether you're craving succulent chicken, juicy beef, or fresh sushi, we have something to satisfy every palate.
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Food, LLC</a>
+        </div>
+        <div class="collapse navbar-collapse" id="collapsable-nav">
+            <ul class="nav navbar-nav" id="nav-list">
+                <li><a href="#">Chicken</a></li>
+                <li><a href="#">Beef</a></li>
+                <li><a href="#">Sushi</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-                    Our chicken dishes are prepared using only the finest, free-range poultry. From classic roast chicken to spicy buffalo wings, each bite is a testament to our commitment to quality. Our skilled chefs infuse each dish with a unique blend of herbs and spices, ensuring a memorable dining experience.
-
-                    For beef lovers, our selection is second to none. We source our beef from premium suppliers, guaranteeing tender, flavorful cuts every time. Whether you prefer a perfectly grilled steak or a hearty beef stew, our beef dishes are sure to impress.
-
-                    Sushi enthusiasts will delight in our fresh, expertly crafted rolls. Using only the freshest seafood and ingredients, our sushi chefs create beautiful, delicious pieces that are as much a feast for the eyes as they are for the palate. From classic nigiri to creative fusion rolls, our sushi menu offers something for everyone.
-
-                    At Food, LLC, we believe that great food brings people together. That's why we put so much care and attention into every dish we serve. Our commitment to quality ingredients, expert preparation, and excellent service ensures that every visit to Food, LLC is a special occasion.
-
-                    We also cater to various dietary needs and preferences. Whether you're vegetarian, vegan, gluten-free, or have specific allergies, our diverse menu and accommodating staff will ensure you have a delightful dining experience.
-
-                    Don't forget to ask about our daily specials and seasonal offerings. Our chefs love to experiment with new flavors and ingredients, bringing you exciting culinary creations throughout the year.
-
-                    We invite you to explore our menu, savor our dishes, and experience the passion we put into every meal. At Food, LLC, we're not just serving food; we're creating memories, one plate at a time.
-
-                    Thank you for choosing Food, LLC. We look forward to serving you and exceeding your culinary expectations. Bon appétit!
-                </p>
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="text-center">Our Menu</h1>
+            <div id="main-content">
+                <h2>Chicken</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <!-- Voeg meer inhoud toe om de sectie echt lang te maken -->
             </div>
         </div>
     </div>
+</div>
 
-    <!-- jQuery and Bootstrap JS (Required for the collapsible menu) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- Bootstrap JavaScript and dependencies -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
